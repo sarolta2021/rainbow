@@ -1,0 +1,96 @@
+body {
+  background-color: #000;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.hint {
+  font-family: sans-serif;
+  font-weight: 100;
+
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  left: 20px;
+
+  display: flex;
+
+  height: 100px;
+  padding: 4em;
+
+  background-color: #fff8;
+}
+
+/* Rainbow the background */
+
+@media (max-width: 600px) {
+  body {
+    background-color: red;
+  }
+}
+
+@media (min-width: 600px) {
+  body {
+    background-color: orange;
+  }
+}
+
+@media (min-width: 650px) {
+  body {
+    background-color: yellow;
+  }
+}
+
+@media (min-width: 700px) {
+  body {
+    background-color: green;
+  }
+}
+
+@media (min-width: 750px) {
+  body {
+    background-color: blue;
+  }
+}
+
+@media (min-width: 800px) {
+  body {
+    background-color: indigo;
+  }
+}
+@media (min-width: 850px) {
+  body {
+    background-color: purple;
+  }
+}
+
+/* Hint box alignment */
+
+@media (min-height: 550px) {
+  .hint {
+    position: absolute;
+    top: 50vh;
+    transform: translateY(-50%);
+  }
+}
+
+@media (min-height: 650px) {
+  .hint {
+    position: absolute;
+    top: 20vh;
+    transform: translateY(-50%);
+  }
+}
+
+
+
+/* Use transition */
+
+/*.hint {
+  transition: width 1s, height 1s, background-color 1s, transform 1s;
+}*/
+
+/*.hint {
+//  transition: ease-out all 1s;
+//}
